@@ -1,0 +1,288 @@
+/******************************************************************************
+
+Welcome to GDB Online.
+  GDB online is an online compiler and debugger tool for C, C++, Python, PHP, Ruby, 
+  C#, OCaml, VB, Perl, Swift, Prolog, Javascript, Pascal, COBOL, HTML, CSS, JS
+  Code, Compile, Run and Debug online from anywhere in world.
+
+*******************************************************************************/
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int HPKarakter =230;
+    int tenaga = 40;
+    int HPMonster = 275;
+    int serbuan = 35;
+    int obat = 3;
+ 
+    string level;
+    string karakter;
+    string pilihSenjata;
+    string pilihOpsi;
+    string selanjutnya;
+    string hasil;
+    string pelindung;
+    string senjata;
+    string musuh;
+    
+    cout << endl;
+    cout << "        ==========================        " << endl;
+    cout << "        | SELAMAT DATANG DI GAME |        " << endl;
+    cout << "        ==========================        " << endl;
+    cout << endl;
+    
+    while(true){
+         cout << "   TENTUKAN KARAKTER & SENJATA FAVORIT MU !   " << endl;
+         cout << "   ========================================   " << endl;
+         cout << "   *       1. KSATRIA DENGAN PEDANG       *   " << endl;
+         cout << "   *       2. PEMANAH DENGAN PANAH        *   " << endl;
+         cout << "   *       3. MEDIS   DENGAN PISTOL       *   " << endl;
+         cout << "   ========================================   " << endl;
+         cout << endl;
+    
+         cout << "  PILIH KARAKTER : ";
+         cin >> karakter;
+        cout << endl;
+     
+        if(karakter == "1"){
+        karakter = "KSATRIA DENGAN SENJATA PEDANG";
+        break;
+        }
+        
+     
+        else if(karakter == "2"){
+        karakter = "PEMANAH DENGAN SENJATA PANAH";
+        break;
+        }
+     
+         else if(karakter == "3"){
+        karakter = "MEDIS DENGAN SENJATA PISTOL";
+        break;
+         }
+         
+        else {
+            break;
+        }
+        continue;
+    }
+     
+     cout << "  KAMU MEMILIH " << karakter << senjata << endl << endl;
+     
+     cout << "  KETIK APA SAJA UNTUK MELANJUTKAN: " ;
+     cin >> selanjutnya;
+      
+     cout << "\033[2J\033[1;1H" ;
+     cout << endl;
+    
+    
+    while(true){
+     cout << "       PILIH LAWAN UNTUK BERTARUNG     " << endl;
+     cout << "       ===========================     " << endl;
+     cout << "       * 1. MONSTER SLENDERMAN   *     " << endl;
+     cout << "       * 2. MONSTER GOLEM        *     " << endl;
+     cout << "       * 3. MONSTER OROCHIMARU   *     " << endl;
+     cout << "       ===========================     " << endl << endl;
+     
+     cout << "  PILIH LAWAN BERTARUNG : ";
+     cin >> musuh;
+     cout << endl;
+     
+     if(musuh == "1"){
+        musuh = " MONSTER SLENDERMAN";
+        break;
+        }
+        
+        else if(musuh == "2"){
+        musuh = "MONSTER GOLEM";
+        break;
+        }
+     
+         else if(musuh == "3"){
+        musuh = "MONSTER OROCHIMARU";
+        break;
+         }
+         
+        else {
+            break;
+        }
+        continue;
+    }
+     
+     cout << "  KAMU MEMILIH LAWAN " << musuh << endl;
+     cout << endl;
+     cout << "\033[2J\033[1;1H" ;
+     
+    while(true){
+     cout << endl;
+     cout << "       PILIH PELINDUNG TUBUH :         " << endl;
+     cout << "       =======================         " << endl;
+     cout << "       *      1. VEST        *         " << endl;
+     cout << "       *      2. HELMET      *         " << endl;
+     cout << "       *      3. TAMENG      *         " << endl;
+     cout << "       =======================         " << endl;
+     cout << endl;
+    
+    cout << "   PILIH PELINDUNG TUBUH : ";
+    cin >> pelindung;
+    cout << endl;
+    
+    if(pelindung == "1"){
+        pelindung= "VEST";
+        break;
+        }
+        
+     
+        else if(pelindung == "2"){
+        pelindung = "HELMET";
+        break;
+        }
+     
+         else if(pelindung == "3"){
+        pelindung = "TAMENG";
+        break;
+         }
+         
+        else {
+            break;
+        }
+        continue;
+    }
+    
+     cout << endl;
+     cout << "  KAMU MEMILIH " << pelindung<< endl;
+     cout << endl;
+     
+     cout << "====================================================================================" << endl;
+     cout << "* KAMU MEMILIH KARAKTER " << karakter << " MEMAKAI PERLINDUNGAN " << pelindung << endl;
+     cout << "* DAN BERTARUNG DENGAN " << musuh << "! AYO LAWAN MONSTER JELEK ITU"  << endl;
+     cout << "====================================================================================" << endl;
+     cout << endl;
+     
+     cout << " KETIK APA SAJA UNTUK MELANJUTKAN : " ;
+     cin >> selanjutnya;
+      
+    cout << "\033[2J\033[1;1H" ;
+
+    cout << endl;
+    cout << " LIHAT DISANA ADA MONSTER AYO SERANG !!! " << endl;
+    cout << "=========================================" << endl << endl;
+    cout << " KETIK APA SAJA UNTUK MELANJUTKAN : " << endl;
+    cin >>selanjutnya;
+    cout << endl;
+    
+    while(true){
+        cout << "\033[2J\033[1;1H";
+        cout << endl;
+        
+    cout << "  DETAIL KARAKTER" <<karakter<< "DAN" <<musuh<< endl;
+    cout << "  ============================================================" << endl;
+    cout << "              *   HP Karakter  = " << HPKarakter << endl;
+    cout << "              *    Tenaga      = " << tenaga << endl;
+    cout << endl;
+    cout << "              *    HP Monster  = " << HPMonster << endl;
+    cout << "              *    serangan    = " << serbuan << endl;
+    cout << "   ==========================================================  " << endl;
+    cout << endl;
+    
+    
+    cout << endl;
+    cout << " KETIK APA SAJA UNTUK MELANJUTKAN : ";
+    cin >> selanjutnya;
+                    
+    hasil = " MONSTER MENDEKAT !!! ";
+                    
+    while(true){
+                        
+    cout << "\033[2J\033[1;1H";
+                    
+    cout << endl;
+    cout << hasil << endl;
+                    
+    cout << endl;
+    cout << "=============================" << endl;
+    cout << " - HP KARAKTER = " << HPKarakter<< endl;
+    cout << " - TENAGA      = " << tenaga << endl;
+    cout << endl;
+    cout << " - OBAT        = " << obat << endl;
+                    
+    cout << endl;
+    cout << " - HP MONSTER       = " << HPMonster << endl;
+    cout << " - SERBUAN MONSTER = " << serbuan << endl;
+    cout << "=============================" << endl << endl;
+    
+        if(HPKarakter <= 0){
+        cout << endl;
+        cout << "  ================  " << endl;
+        cout << "  * KAMU KALAH ! *  " << endl;
+        cout << "  ================  " << endl;
+                    
+        break;
+        }
+
+        else if(HPMonster <= 0){
+        cout << endl;
+        cout << "  =================  " << endl;
+        cout << "  * KAMU MENANG ! *  " << endl;
+        cout << "  =================  " << endl;
+                                
+        break;
+        }
+    
+    cout << "     PILIH OPSI "       << endl;
+    cout << " ==================== " << endl;
+    cout << " *  1. SERANG       * " << endl;
+    cout << " *  2. GUNAKAN OBAT * " << endl;
+    cout << " ==================== " << endl;
+                    
+    cout << endl;
+    cout << " MASUKKAN OPSI: ";
+    cin >> pilihOpsi;
+                    
+        if(pilihOpsi == "1"){
+        hasil = " HATI HATI MONSTER MENYERANG MU !";
+        HPKarakter -= serbuan;
+        HPMonster -= tenaga;
+        continue;
+        }
+                        
+        else if(pilihOpsi == "2"){
+                            
+            if(obat >= 1){
+            hasil = " HP KARAKTER BERTAMBAH !";
+            obat -= 1;
+ HPKarakter += 30;
+            continue;
+            }
+                            
+            else if(obat < 1){
+            hasil = " OBAT TIDAK TERSEDIA ";
+            continue;
+            }
+        }
+                        
+        else{
+        continue;
+        }
+                        
+    }
+    
+    break;
+    
+    }
+
+return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
